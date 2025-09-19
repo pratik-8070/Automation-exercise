@@ -11,7 +11,6 @@ export default class HomePage {
     this.blueTopAddToCartButton = page.locator('.recommended_items .productinfo:has-text("Blue Top") .add-to-cart[data-product-id="1"]');
     this.viewCartLink = page.locator('a:has-text("View Cart")');
     this.blueTopItem=page.locator('a[href="/product_details/1"]');
-
     this.carousel = page.locator('#recommended-item-carousel');
     this.slides = this.carousel.locator('.item'); 
     this.prices = this.carousel.locator('.item h2'); 
@@ -65,7 +64,7 @@ export default class HomePage {
       const price = parseInt(priceText.replace(/[^\d]/g, ''), 10);
 
       if (price >= minPrice) {
-        console.log(`✅ Adding: ${productName} with price Rs.${price}`);
+        console.log(`Adding: ${productName} with price Rs.${price}`);
         await product.locator('.add-to-cart').click();
         await this.page.waitForTimeout(1000);
       } else {
