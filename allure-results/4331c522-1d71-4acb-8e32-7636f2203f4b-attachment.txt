@@ -1,0 +1,4 @@
+Total slides found: 2
+⏩ Skipping: Blue Top with price Rs.500
+⏩ Skipping: Men Tshirt with price Rs.400
+✅ Adding: Rs. 1000 with price Rs.1000
