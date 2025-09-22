@@ -1,0 +1,216 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Website for automation practice" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Website for automation practice" [ref=e9] [cursor=pointer]
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link " Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e15] [cursor=pointer]: 
+            - text: Home
+        - listitem [ref=e16]:
+          - link " Products" [ref=e17] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=e18] [cursor=pointer]: 
+            - text: Products
+        - listitem [ref=e19]:
+          - link " Cart" [ref=e20] [cursor=pointer]:
+            - /url: /view_cart
+            - generic [ref=e21] [cursor=pointer]: 
+            - text: Cart
+        - listitem [ref=e22]:
+          - link " Logout" [ref=e23] [cursor=pointer]:
+            - /url: /logout
+            - generic [ref=e24] [cursor=pointer]: 
+            - text: Logout
+        - listitem [ref=e25]:
+          - link " Delete Account" [ref=e26] [cursor=pointer]:
+            - /url: /delete_account
+            - generic [ref=e27] [cursor=pointer]: 
+            - text: Delete Account
+        - listitem [ref=e28]:
+          - link " Test Cases" [ref=e29] [cursor=pointer]:
+            - /url: /test_cases
+            - generic [ref=e30] [cursor=pointer]: 
+            - text: Test Cases
+        - listitem [ref=e31]:
+          - link " API Testing" [ref=e32] [cursor=pointer]:
+            - /url: /api_list
+            - generic [ref=e33] [cursor=pointer]: 
+            - text: API Testing
+        - listitem [ref=e34]:
+          - link " Video Tutorials" [ref=e35] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/AutomationExercise
+            - generic [ref=e36] [cursor=pointer]: 
+            - text: Video Tutorials
+        - listitem [ref=e37]:
+          - link " Contact us" [ref=e38] [cursor=pointer]:
+            - /url: /contact_us
+            - generic [ref=e39] [cursor=pointer]: 
+            - text: Contact us
+        - listitem [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: 
+            - text: Logged in as
+            - generic [ref=e43]: Pratik Lal Vishwakarma
+  - generic [ref=e45]:
+    - list [ref=e47]:
+      - listitem [ref=e48]:
+        - link "Products" [ref=e49] [cursor=pointer]:
+          - /url: /products
+      - listitem [ref=e50]: Kookie Kids
+    - generic [ref=e51]:
+      - generic [ref=e53]:
+        - heading "Category" [level=2] [ref=e54]
+        - generic [ref=e55]:
+          - heading " Women" [level=4] [ref=e58]:
+            - link " Women" [ref=e59] [cursor=pointer]:
+              - /url: "#Women"
+              - generic [ref=e61] [cursor=pointer]: 
+              - text: Women
+          - heading " Men" [level=4] [ref=e64]:
+            - link " Men" [ref=e65] [cursor=pointer]:
+              - /url: "#Men"
+              - generic [ref=e67] [cursor=pointer]: 
+              - text: Men
+          - heading " Kids" [level=4] [ref=e70]:
+            - link " Kids" [ref=e71] [cursor=pointer]:
+              - /url: "#Kids"
+              - generic [ref=e73] [cursor=pointer]: 
+              - text: Kids
+        - generic [ref=e74]:
+          - heading "Brands" [level=2] [ref=e75]
+          - list [ref=e77]:
+            - listitem [ref=e78]:
+              - link "(6) Polo" [ref=e79] [cursor=pointer]:
+                - /url: /brand_products/Polo
+                - generic [ref=e80] [cursor=pointer]: (6)
+                - text: Polo
+            - listitem [ref=e81]:
+              - link "(5) H&M" [ref=e82] [cursor=pointer]:
+                - /url: /brand_products/H&M
+                - generic [ref=e83] [cursor=pointer]: (5)
+                - text: H&M
+            - listitem [ref=e84]:
+              - link "(5) Madame" [ref=e85] [cursor=pointer]:
+                - /url: /brand_products/Madame
+                - generic [ref=e86] [cursor=pointer]: (5)
+                - text: Madame
+            - listitem [ref=e87]:
+              - link "(3) Mast & Harbour" [ref=e88] [cursor=pointer]:
+                - /url: /brand_products/Mast & Harbour
+                - generic [ref=e89] [cursor=pointer]: (3)
+                - text: Mast & Harbour
+            - listitem [ref=e90]:
+              - link "(4) Babyhug" [ref=e91] [cursor=pointer]:
+                - /url: /brand_products/Babyhug
+                - generic [ref=e92] [cursor=pointer]: (4)
+                - text: Babyhug
+            - listitem [ref=e93]:
+              - link "(3) Allen Solly Junior" [ref=e94] [cursor=pointer]:
+                - /url: /brand_products/Allen Solly Junior
+                - generic [ref=e95] [cursor=pointer]: (3)
+                - text: Allen Solly Junior
+            - listitem [ref=e96]:
+              - link "(3) Kookie Kids" [ref=e97] [cursor=pointer]:
+                - /url: /brand_products/Kookie Kids
+                - generic [ref=e98] [cursor=pointer]: (3)
+                - text: Kookie Kids
+            - listitem [ref=e99]:
+              - link "(5) Biba" [ref=e100] [cursor=pointer]:
+                - /url: /brand_products/Biba
+                - generic [ref=e101] [cursor=pointer]: (5)
+                - text: Biba
+      - generic [ref=e103]:
+        - heading "Brand - Kookie Kids Products" [level=2] [ref=e104]
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - generic [ref=e108]:
+              - img "ecommerce website products" [ref=e109]
+              - heading "Rs. 679" [level=2] [ref=e110]
+              - paragraph [ref=e111]: Full Sleeves Top Cherry - Pink
+              - link " Add to cart" [ref=e112] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e113] [cursor=pointer]: 
+                - text: Add to cart
+            - generic [ref=e114]:
+              - heading "Rs. 679" [level=2] [ref=e115]
+              - paragraph [ref=e116]: Full Sleeves Top Cherry - Pink
+              - link " Add to cart" [ref=e117] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e118] [cursor=pointer]: 
+                - text: Add to cart
+          - list [ref=e120]:
+            - listitem [ref=e121]:
+              - link " View Product" [ref=e122] [cursor=pointer]:
+                - /url: /product_details/14
+                - generic [ref=e123] [cursor=pointer]: 
+                - text: View Product
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - img "ecommerce website products" [ref=e128]
+              - heading "Rs. 1200" [level=2] [ref=e129]
+              - paragraph [ref=e130]: Little Girls Mr. Panda Shirt
+              - link " Add to cart" [ref=e131] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e132] [cursor=pointer]: 
+                - text: Add to cart
+            - generic [ref=e133]:
+              - heading "Rs. 1200" [level=2] [ref=e134]
+              - paragraph [ref=e135]: Little Girls Mr. Panda Shirt
+              - link " Add to cart" [ref=e136] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e137] [cursor=pointer]: 
+                - text: Add to cart
+          - list [ref=e139]:
+            - listitem [ref=e140]:
+              - link " View Product" [ref=e141] [cursor=pointer]:
+                - /url: /product_details/18
+                - generic [ref=e142] [cursor=pointer]: 
+                - text: View Product
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - img "ecommerce website products" [ref=e147]
+              - heading "Rs. 1190" [level=2] [ref=e148]
+              - paragraph [ref=e149]: Cotton Mull Embroidered Dress
+              - link " Add to cart" [ref=e150] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e151] [cursor=pointer]: 
+                - text: Add to cart
+            - generic [ref=e152]:
+              - heading "Rs. 1190" [level=2] [ref=e153]
+              - paragraph [ref=e154]: Cotton Mull Embroidered Dress
+              - link " Add to cart" [ref=e155] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e156] [cursor=pointer]: 
+                - text: Add to cart
+          - list [ref=e158]:
+            - listitem [ref=e159]:
+              - link " View Product" [ref=e160] [cursor=pointer]:
+                - /url: /product_details/20
+                - generic [ref=e161] [cursor=pointer]: 
+                - text: View Product
+  - generic:
+    - insertion:
+      - generic:
+        - iframe
+  - contentinfo [ref=e162]:
+    - generic [ref=e167]:
+      - heading "Subscription" [level=2] [ref=e168]
+      - generic [ref=e169]:
+        - textbox "Your email address" [ref=e170]
+        - button "" [ref=e171] [cursor=pointer]:
+          - generic [ref=e172] [cursor=pointer]: 
+        - paragraph [ref=e173]:
+          - text: Get the most recent updates from
+          - text: our site and be updated your self...
+    - paragraph [ref=e177]: Copyright © 2021 All rights reserved
+  - text: 
+```

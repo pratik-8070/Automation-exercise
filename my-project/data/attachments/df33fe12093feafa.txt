@@ -1,0 +1,8 @@
+Total slides found: 2
+⏩ Skipping: Blue Top with price Rs.500
+⏩ Skipping: Men Tshirt with price Rs.400
+✅ Adding: Rs. 1000 with price Rs.1000
+✅ Adding: Stylish Dress with price Rs.1500
+⏩ Skipping: Winter Top with price Rs.600
+⏩ Skipping: Summer White Top with price Rs.400
+🛒 Total items added: 2

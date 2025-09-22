@@ -1,9 +1,10 @@
-import { defineConfig, devices } from '@playwright/test';
-import dotenv from 'dotenv';
-import path from 'path';
+const { defineConfig, devices } = require('@playwright/test');
+const dotenv = require('dotenv');
+const path = require('path');
+
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
-export default defineConfig({
+module.exports = defineConfig({
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -13,7 +14,6 @@ export default defineConfig({
   expect: {
     timeout: 7000
   },
-
 
   reporter: [
     ['list'],
@@ -36,4 +36,7 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
   ],
+
+  // 🔑 This makes Playwright send the report after tests finish
+  globalTeardown: './globalTeardown.js',
 });
