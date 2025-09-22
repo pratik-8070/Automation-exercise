@@ -10,6 +10,10 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
   timeout: 60000,
+  expect: {
+    timeout: 7000
+  },
+
 
   reporter: [
     ['list'],
@@ -18,6 +22,8 @@ export default defineConfig({
   ],
 
   use: {
+    actionTimeout: 50000,
+    navigationTimeout: 15000,
     baseURL: process.env.BASE_URL,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
