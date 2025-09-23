@@ -2,7 +2,7 @@ name: Daily Test Run
 
 on:
   schedule:
-    - cron: '0 8 * * *' # 1:30 PM IST
+    - cron: '10 9 * * *' # 2:40 PM IST
   workflow_dispatch:
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -28,8 +28,7 @@ jobs:
         run: npx playwright test
 
       - name: Generate Allure report
-        run: |
-          npx allure generate allure-results --clean -o public/reports
+        run: npx allure generate allure-results --clean -o public/reports
 
       - name: Send email with report
         uses: dawidd6/action-send-mail@v3
@@ -42,5 +41,11 @@ jobs:
           subject: "Daily Playwright Test Report"
           to: pratikv8070@gmail.com
           from: GitHub Actions <${{ secrets.EMAIL_USER }}>
-          body: "Hi Pratik,\n\nHere is the latest Playwright Allure test report.\n\nBest,\nGitHub Actions"
+          body: |
+            Hi Pratik,
+
+            Here is the latest Playwright Allure test report.
+
+            Best,
+            GitHub Actions
           attachments: public/reports/index.html
