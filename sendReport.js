@@ -17,7 +17,7 @@ async function sendReportEmail() {
       <p>Hello,</p>
       <p>The latest Playwright test report is ready ✅</p>
       <p>
-        👉 <a href="https://your-vercel-app.vercel.app" target="_blank">Click here to view the report</a>
+        👉 <a href="https://automation-exercise-pratik.vercel.app/" target="_blank">Click here to view the report</a>
       </p>
     `,
   };
