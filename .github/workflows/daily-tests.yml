@@ -28,9 +28,11 @@ jobs:
         run: npx playwright test
 
       - name: Generate Allure report
+        if: always()
         run: npx allure generate allure-results --clean -o public/reports
 
       - name: Send email with report
+        if: always()
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
