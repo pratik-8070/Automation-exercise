@@ -19,12 +19,18 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
+        env: # 👈 pass secrets into environment
+          BASE_URL: ${{ secrets.BASE_URL }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
         run: npx playwright test
 
       - name: Generate Allure report
@@ -42,11 +48,11 @@ jobs:
           server_address: smtp.gmail.com
           server_port: 465
           secure: true
-          username: "pratikv8070@gmail.com"
-          password: "bjpy tmuu jgqd nygo" # Gmail App Password (16 chars, not your normal Gmail password)
+          username: ${{ secrets.EMAIL_USER }}
+          password: ${{ secrets.EMAIL_PASS }}
           subject: "Daily Playwright Test Report"
-          to: "pratikv8070@gmail.com"
-          from: "GitHub Actions <pratikv8070@gmail.com>"
+          to: ${{ secrets.EMAIL_USER }}
+          from: "GitHub Actions <${{ secrets.EMAIL_USER }}>"
           body: |
             Hi Pratik,
 
