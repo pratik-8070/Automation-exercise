@@ -31,6 +31,10 @@ jobs:
         if: always()
         run: npx allure generate allure-results --clean -o public/reports
 
+      - name: Zip Allure report
+        if: always()
+        run: zip -r report.zip public/reports
+
       - name: Send email with report
         if: always()
         uses: dawidd6/action-send-mail@v3
@@ -46,8 +50,8 @@ jobs:
           body: |
             Hi Pratik,
 
-            Here is the latest Playwright Allure test report.
+            Please find attached the latest Playwright Allure test report.
 
             Best,
             GitHub Actions
-          attachments: public/reports/index.html
+          attachments: report.zip
