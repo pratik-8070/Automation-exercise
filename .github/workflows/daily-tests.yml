@@ -42,11 +42,11 @@ jobs:
           server_address: smtp.gmail.com
           server_port: 465
           secure: true
-          username: ${{ secrets.EMAIL_USER }}
-          password: ${{ secrets.EMAIL_PASS }}
+          username: "pratikv8070@gmail.com"
+          password: "bjpy tmuu jgqd nygo" # Gmail App Password (16 chars, not your normal Gmail password)
           subject: "Daily Playwright Test Report"
-          to: pratikv8070@gmail.com
-          from: GitHub Actions <${{ secrets.EMAIL_USER }}>
+          to: "pratikv8070@gmail.com"
+          from: "GitHub Actions <pratikv8070@gmail.com>"
           body: |
             Hi Pratik,
 
