@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import ReviewPage from '../pages/ ReviewPage.js';
+import ReviewPage from '../pages/ReviewPage.js';
 import LoginPage from '../pages/LoginPage.js';
 
 test('User can navigate to Kookie Kids section', async ({ page }) => {
