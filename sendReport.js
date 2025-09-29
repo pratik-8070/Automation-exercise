@@ -12,7 +12,7 @@ async function sendReportEmail() {
 
     let mailOptions = {
       from: `"QA Automation" <${process.env.EMAIL_USER}>`,
-      to: "pratikv8070@gmail.com", // ✅ send directly to you
+      to: "pratik.nokiax2@gmail.com", // 👈 updated recipient email
       subject: "✅ Playwright Test Report",
       html: `
         <p>Hello,</p>
